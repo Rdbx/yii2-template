@@ -1,0 +1,96 @@
+{
+    "name": "redbox/template",
+    "description": "Yii2 REDBOX-Template",
+    "keywords": [
+        "yii2",
+        "framework",
+        "advanced",
+        "project template"
+    ],
+    "homepage": "https://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "https://www.yiiframework.com/forum/",
+        "wiki": "https://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 8.1",
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "firebase/php-jwt": "^5.2",
+        "yiisoft/yii2-httpclient": "^2.0",
+        "yiisoft/yii2-queue": "^2.3",
+        "yiithings/yii2-dotenv": "^1.0",
+        "nesbot/carbon": "3.x-dev",
+        "symfony/var-dumper": "^5.3",
+        "twig/twig": "^3.3",
+        "ext-json": "*",
+        "antonyz89/yii2-seeder": "dev-master",
+        "guzzlehttp/guzzle": "^7.3",
+        "voronkovich/sberbank-acquiring-client": "^2.7",
+        "filsh/yii2-oauth2-server": "^2.1",
+        "yiithings/yii2-softdelete": "dev-master",
+        "yiisoft/yii2-debug": ">=2.1.21",
+        "cranetm/yii2-json-rpc-2.0": "1.*",
+        "yiisoft/yii2-redis": "2.0.x-dev",
+        "casbin/yii-permission": "dev-master",
+        "rdbx/yii2-advance-active-record": "1.0.*",
+        "rdbx/yii2-collection": "1.0.*",
+        "rdbx/yii2-core": "1.0.*",
+        "rdbx/yii2-filter-fql": "1.0.*",
+        "rdbx/yii2-swagger": "1.0.*",
+        "rdbx/yii2-auth": "1.0.*",
+        "rdbx/yii2-filemanager": "1.0.*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-gii": "~2.1.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "symfony/browser-kit": "*",
+        "codeception/codeception": "^5.0.4",
+        "codeception/module-asserts": "*",
+        "codeception/module-yii2": "*",
+        "codeception/module-filesystem": "*",
+        "codeception/verify": "*",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-rest": "*",
+        "codeception/module-db": "*",
+        "codeception/module-datafactory": "*"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "gitlab-domains": ["git.rdbx24.ru"],
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        },
+        "secure-http": false
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "http://git.rdbx24.ru/api/v4/group/141/-/packages/composer/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "api\\": "api/",
+            "common\\": "common/",
+            "console\\": "console/",
+            "tests\\": "tests/",
+            "doc\\": "doc/"
+        }
+    },
+    "version": "0.0.1"
+}
